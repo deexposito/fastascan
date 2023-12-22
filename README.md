@@ -28,9 +28,9 @@ To make the fastascan script executable from any location in the terminal, you c
 
 ### Option 1: Add to an Existing Path Directory
 
-    Locate a directory that's already in your PATH. Common directories include /usr/local/bin or ~/bin (for local user binaries).
+Locate a directory that's already in your PATH. Common directories include /usr/local/bin or ~/bin (for local user binaries).
 
-    Move the fastascan.sh script to that directory:
+Move the fastascan.sh script to that directory:
 
     bash
 
@@ -38,12 +38,13 @@ mv /path/to/fastascan/scripts/fastascan.sh /usr/local/bin/fastascan
 
 Make the script executable:
 
-bash
+    bash
 
     chmod +x /usr/local/bin/fastascan
 
 Now, you can run fastascan from any location in the terminal.
-Option 2: Create a New Path Directory
+
+### Option 2: Create a New Path Directory
 
     Create a directory for custom binaries (if it doesn't already exist):
 
@@ -53,52 +54,51 @@ mkdir -p ~/bin
 
 Move the fastascan.sh script to the new directory:
 
-bash
+    bash
 
 mv /path/to/fastascan/scripts/fastascan.sh ~/bin/fastascan
 
 Add the ~/bin directory to your PATH by appending the following line to your .bashrc or .bash_profile file (assuming you're using Bash):
 
-bash
+    bash
 
 export PATH="$HOME/bin:$PATH"
 
 Apply the changes by sourcing your profile:
 
-bash
+    bash
 
     source ~/.bashrc   # or source ~/.bash_profile
 
 Now, you should be able to run fastascan from any location in the terminal.
-Usage
+
+## Usage
 
 Run the script without any arguments to scan the current directory:
 
-bash
+    bash
 
 ./fastascan.sh
 
 Or specify a directory to scan:
 
-bash
+    bash
 
 ./fastascan.sh /path/to/directory
 
-Sample Output
+### Sample Output
 
 Upon execution, the script will generate a report detailing:
 
-    File paths and symlink indications.
-    Sequence types (Nucleotide/Protein).
-    Number of sequences in each file.
-    Total sequence length.
-    A global summary across all scanned files.
+- File paths and symlink indications.
+- Sequence types (Nucleotide/Protein).
+- Number of sequences in each file.
+- Total sequence length.
+- A global summary across all scanned files.
 
-Contributing
+### Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
-License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
