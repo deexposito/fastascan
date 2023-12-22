@@ -18,10 +18,10 @@
 
 1. Clone the repository:
   
-  ```bash
+```bash
    git clone https://github.com/yourusername/fastascan.git
    cd fastascan/scripts
-  ```bash
+```
 
 ## Making fastascan Executable from Any Location
 
