@@ -17,7 +17,8 @@
 ## Installation
 
 1. Clone the repository:
-
+  
+  ```bash
    git clone https://github.com/yourusername/fastascan.git
    cd fastascan/scripts
 
@@ -42,7 +43,7 @@ Now, you can run fastascan from any location in the terminal.
 
 ### Option 2: Create a New Path Directory
 
-    Create a directory for custom binaries (if it doesn't already exist):
+Create a directory for custom binaries (if it doesn't already exist):
 
     mkdir -p ~/bin
 
@@ -64,11 +65,11 @@ Now, you should be able to run fastascan from any location in the terminal.
 
 Run the script without any arguments to scan the current directory:
 
-    ./fastascan.sh
+    fastascan
 
 Or specify a directory to scan:
 
-    ./fastascan.sh /path/to/directory
+    fastascan /path/to/directory
 
 ### Sample Output
 
