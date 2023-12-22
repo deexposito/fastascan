@@ -32,14 +32,12 @@ Locate a directory that's already in your PATH. Common directories include /usr/
 
 Move the fastascan.sh script to that directory:
 
-    bash
-
-mv /path/to/fastascan/scripts/fastascan.sh /usr/local/bin/fastascan
+    ```bash
+    mv /path/to/fastascan/scripts/fastascan.sh /usr/local/bin/fastascan
 
 Make the script executable:
 
-    bash
-
+    ```bash
     chmod +x /usr/local/bin/fastascan
 
 Now, you can run fastascan from any location in the terminal.
@@ -48,26 +46,22 @@ Now, you can run fastascan from any location in the terminal.
 
     Create a directory for custom binaries (if it doesn't already exist):
 
-    bash
-
-mkdir -p ~/bin
+    ```bash
+    mkdir -p ~/bin
 
 Move the fastascan.sh script to the new directory:
 
-    bash
-
-mv /path/to/fastascan/scripts/fastascan.sh ~/bin/fastascan
+    ```bash
+    mv /path/to/fastascan/scripts/fastascan.sh ~/bin/fastascan
 
 Add the ~/bin directory to your PATH by appending the following line to your .bashrc or .bash_profile file (assuming you're using Bash):
 
-    bash
-
-export PATH="$HOME/bin:$PATH"
+    ```bash
+    export PATH="$HOME/bin:$PATH"
 
 Apply the changes by sourcing your profile:
 
-    bash
-
+    ```bash
     source ~/.bashrc   # or source ~/.bash_profile
 
 Now, you should be able to run fastascan from any location in the terminal.
@@ -76,15 +70,13 @@ Now, you should be able to run fastascan from any location in the terminal.
 
 Run the script without any arguments to scan the current directory:
 
-    bash
-
-./fastascan.sh
+    ```bash
+    ./fastascan.sh
 
 Or specify a directory to scan:
 
-    bash
-
-./fastascan.sh /path/to/directory
+    ```bash
+    ./fastascan.sh /path/to/directory
 
 ### Sample Output
 
